@@ -30,6 +30,26 @@
             tg.sendData("check_user"); // Ye bot ko signal bhejega
             tg.close();
         }
-    </script>
+   <script>
+    let tg = window.Telegram.WebApp;
+    tg.expand();
+
+    function verify() {
+        // Verification success message dikhane ke liye ek naya div create karein
+        let statusDiv = document.createElement('div');
+        statusDiv.style.cssText = "background: #00c853; color: white; padding: 15px; border-radius: 10px; margin-top: 20px; font-weight: bold;";
+        statusDiv.innerText = "Verification successful! Redirecting...";
+        
+        // Is message ko "Verify Membership" button ke upar dikhayein
+        let container = document.querySelector('.box');
+        container.appendChild(statusDiv);
+
+        // 2 second baad login page par redirect karne ke liye
+        setTimeout(function() {
+            // Yahan us rewards login page ka link dalein jo aapne image mein dikhaya hai
+            window.location.href = "https://claims.britanniarewards.in"; 
+        }, 2000);
+    }
+</script>
 </body>
 </html>
