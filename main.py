@@ -5,7 +5,7 @@ from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 # Render ke Environment Variables se token uthayega
-TOKEN = "8578243284:AAHOi-OeRW0cYv7tQNXD8ABOnty5U1klyKc"
+TOKEN = "8349459713:AAHvrFPW6ojDKg9x5fHHgWsFcMpV1jq4drI"
 WEB_URL = "https://aj15641869-source.github.io/britannia-web/" 
 CHANNELS = ["@SheinVoucher4000"] # Apne channels ke username yahan dalein
 bot = Bot(token=TOKEN, parse_mode="HTML")
