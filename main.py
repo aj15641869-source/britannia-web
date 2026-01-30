@@ -6,7 +6,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 # --- CONFIGURATION ---
 # Aapka asali token yahan hai
-TOKEN = "8349459713:AAHvrFPW6ojDKg9x5fHHGWsFcMpV1jq4dR"
+TOKEN = "8349459713:AAHvrFPW6ojDKg9x5fHHgWsFcMpV1jq4drI"
 # Aapka GitHub Pages wala link
 WEB_URL = "https://aj15641869-source.github.io/britannia-web/"
 # Jin channels ko join karwana hai unka username
