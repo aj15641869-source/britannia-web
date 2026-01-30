@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { background-color: #1a0506; color: white; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .box { background: #3a0d11; border-radius: 15px; padding: 20px; border: 1px solid #f1c40f; }
+        .logo { width: 100px; margin-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+        .btn { background: #5a1217; padding: 10px; border-radius: 10px; border: 1px solid #7a1d24; font-size: 13px; }
+        .verify { background: #8e44ad; width: 100%; padding: 15px; border-radius: 10px; border: none; color: white; font-weight: bold; margin-top: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Britannia_Industries_logo.svg/1200px-Britannia_Industries_logo.svg.png" class="logo">
+        <h3>JOIN OUR CHANNELS</h3>
+        <p style="font-size: 12px; color: #ccc;">First join all channels, then click Verify</p>
+        <div class="grid">
+            <div class="btn">Treasure loots<br><a href="https://t.me/YourChannel" style="color:#f1c40f">Join</a></div>
+            <div class="btn">Earning Empire<br><a href="https://t.me/YourChannel" style="color:#f1c40f">Join</a></div>
+            </div>
+        <button class="verify" onclick="verify()">VERIFY MEMBERSHIP</button>
+    </div>
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+        function verify() {
+            tg.sendData("check_user"); // Ye bot ko signal bhejega
+            tg.close();
+        }
+    </script>
+</body>
+</html>
