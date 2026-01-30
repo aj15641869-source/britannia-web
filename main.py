@@ -7,7 +7,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 # Render ke Environment Variables se token uthayega
 TOKEN = os.getenv("8578243284:AAGSt3ATP-rRZaNHvFriQgO3OjzK-i8l9Wc")
 WEB_URL = "https://github.com/aj15641869-source/britannia-web.git" 
-CHANNELS = ["@SheinVoucher4000", "https://t.me/+Ge4f0n5L0uRlMDE1"] # Apne channels ke username yahan dalein
+CHANNELS = ["@SheinVoucher4000"] # Apne channels ke username yahan dalein
 
 bot = Bot(token=TOKEN, parse_mode="HTML")
 dp = Dispatcher(bot)
